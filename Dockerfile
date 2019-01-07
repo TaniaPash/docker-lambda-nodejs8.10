@@ -7,7 +7,6 @@ RUN yum update -y \
       && yum install -y libjpeg-devel libpng-devel libjasper-devel libtiff-devel openssl-devel \
       && yum install -y unzip tar make cmake git openssh-clients \
       && yum -y clean all \
-      && cd ${LOCAL_SRC} \
       && curl -s -L -O https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}.tar.gz \
       && tar -zxvf node-v${NODE_VERSION}.tar.gz \
       && cd node-v${NODE_VERSION} \
